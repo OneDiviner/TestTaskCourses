@@ -1,7 +1,6 @@
-package com.example.courseapplication.domain
+package com.example.courseapplication.domain.useCase
 
 import com.example.courseapplication.data.network.model.Course
-import com.example.courseapplication.data.network.model.CoursesResponse
 import com.example.courseapplication.data.network.repository.ICourseRepository
 import javax.inject.Inject
 

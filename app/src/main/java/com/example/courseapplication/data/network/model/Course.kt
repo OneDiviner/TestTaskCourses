@@ -30,5 +30,18 @@ data class Course(
     val hasLike: Boolean,
 
     @SerializedName("publishDate")
-    val publishDate: String
-)
+    val publishDate: String,
+) {
+    companion object {
+        val EMPTY = Course(
+            id = 0,
+            title = "",
+            description = "",
+            price = "",
+            rate = "",
+            startDate = "",
+            hasLike = false,
+            publishDate = ""
+        )
+    }
+}

@@ -1,5 +1,7 @@
 package com.example.courseapplication.data.di
 
+import com.example.courseapplication.data.local.repository.CourseDaoRepository
+import com.example.courseapplication.data.local.repository.ICourseDaoRepository
 import com.example.courseapplication.data.network.repository.CourseRepository
 import com.example.courseapplication.data.network.repository.ICourseRepository
 import dagger.Binds
@@ -14,4 +16,8 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun bindCourseRepository(repository: CourseRepository) : ICourseRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindCourseDaoRepository(repository: CourseDaoRepository) : ICourseDaoRepository
 }
